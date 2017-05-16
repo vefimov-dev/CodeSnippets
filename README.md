@@ -1,2 +1,2 @@
-# VisualStudioCodeSnippets
-Code snippets for VS in C#
+CodeSnippets
+Code snippets for Visual Studio
