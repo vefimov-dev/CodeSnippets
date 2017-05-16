@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>DelegateCommand</Title>
+			<Shortcut>dcmd</Shortcut>
+			<Description>Code snippet for DelegateCommand : ICommand</Description>
+			<Author>Vitalij Efimov</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>CmdName</ID>
+					<ToolTip>Command name</ToolTip>
+					<Default>MyCommand</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[public DelegateCommand $CmdName$ {get; private set;}
+		
+		this.$CmdName$ = new DelegateCommand(this.Execute$CmdName$, this.CanExecute$CmdName$);
+		
+		private bool CanExecute$CmdName$()
+		{
+			return true;
+		}
+		
+		private void Execute$CmdName$()
+		{
+			MessageBox.Show("Stub");
+		}
+	$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
