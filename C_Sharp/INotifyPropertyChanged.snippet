@@ -30,14 +30,9 @@
 			</Declarations>
 			<Code Language="csharp"><![CDATA[public $type$ $property$
 	{
-		get { 
-				return this.$field$;
-			}
-			
-		set {
-				this.$field$ = value;
-				this.OnPropertyChanged();
-			}
+		get { return this.$field$;}
+
+		set { this.SetProperty(ref this.$field$, value); }
 	}
 	$end$]]>
 			</Code>
