@@ -23,7 +23,7 @@
 					<Default>object</Default>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[public DelegateCommand<$CmdArgType$> $CmdName$ {get; private set;}
+			<Code Language="csharp"><![CDATA[public DelegateCommand<$CmdArgType$> $CmdName$ { get; private set; }
 		
 		this.$CmdName$ = new DelegateCommand<$CmdArgType$>(this.Execute$CmdName$, this.CanExecute$CmdName$);
 		
