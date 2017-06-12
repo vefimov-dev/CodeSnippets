@@ -18,7 +18,7 @@
 					<Default>MyCommand</Default>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[public DelegateCommand $CmdName$ {get; private set;}
+			<Code Language="csharp"><![CDATA[public DelegateCommand $CmdName$ { get; private set; }
 		
 		this.$CmdName$ = new DelegateCommand(this.Execute$CmdName$, this.CanExecute$CmdName$);
 		
